@@ -169,6 +169,7 @@ body{
 .hamburger-constructor {
     width: 600px;
     height: 400px;
+    padding: 0 40px;
     box-shadow: 5px 5px 5px lightgrey;
 
     position: relative;
@@ -178,10 +179,25 @@ body{
     .fa{
         position: absolute;
         top: calc((100% - 20px) /2);
-        right: 15px;
 
         font-size: 40px;
         color: gray;
+
+        &.fa-angle-right{
+            right: 15px;
+        }
+        
+        &.fa-angle-left{
+            left: 15px;
+        }
+
+        &.hidden-arrow{
+            display: none;
+        }
+
+        &:hover{
+            color: yellowgreen;
+        }
     }
 
     h2{
@@ -193,6 +209,10 @@ body{
     hr{
         width: 300px;
         margin: 0 0 10px 0;
+    }
+
+    .hidden-screen{
+        display: none;
     }
 
     label{
