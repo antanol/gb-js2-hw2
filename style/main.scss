@@ -161,3 +161,73 @@ body{
         }
     }
 }
+
+#task1-2{
+    display: none;
+}
+
+.hamburger-constructor {
+    width: 600px;
+    height: 400px;
+    box-shadow: 5px 5px 5px lightgrey;
+
+    position: relative;
+
+    // color: gray;
+
+    .fa{
+        position: absolute;
+        top: calc((100% - 20px) /2);
+        right: 15px;
+
+        font-size: 40px;
+        color: gray;
+    }
+
+    h2{
+        margin-bottom: 5px;
+
+        font-weight: 400;
+    }
+
+    hr{
+        width: 300px;
+        margin: 0 0 10px 0;
+    }
+
+    label{
+        display: inline-block;
+
+        min-width: 160px;
+        margin: 10px;
+        padding: 20px;
+        
+        border: 2px solid gray;
+        border-radius: 10px;
+
+        text-align: center;
+
+        &:hover{
+            border-color: yellowgreen;
+        }
+
+        input{
+            display: none;
+        }
+
+        img{
+            height: 100px;
+        }
+
+        .params{
+            font-style: italic;
+            color: gray;
+            font-size: 70%;
+        }
+
+        .price{
+            // font-size: 130%;
+            font-weight: bold;
+        }
+    }
+}
