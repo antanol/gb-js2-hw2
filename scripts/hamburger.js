@@ -16,3 +16,23 @@ function checkBoxing(evt){
         console.log(elem.dataset.name == evt.target.value);
     }
 }
+
+class Burger{
+    constructor(structure=[]){
+        this.structure = structure;
+    }
+
+    editElems(elem, price, ccal){
+        this.structure.pop(elem);
+        countPrice()
+    }
+
+    countPrice(){
+
+    }
+
+    countCcal(){
+
+    }
+}
+
