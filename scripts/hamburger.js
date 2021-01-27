@@ -1,28 +1,18 @@
-const arrowRight = document.querySelector('.fa-angle-right'),
-    arrowLeft = document.querySelector('.fa-angle-left');
+import './hamburger-slider';
 
-let screenShow = 1;
+const checkboxes = document.querySelectorAll('input'),
+    checkedElems = document.querySelectorAll('label');
 
-arrowRight.addEventListener('click', ()=>{
-    document.querySelector(`#step${screenShow}`).classList.add('hidden-screen');
-    document.querySelector(`#step${screenShow+1}`).classList.remove('hidden-screen');
-    screenShow++;
-    if (screenShow > 1){
-        arrowLeft.classList.remove('hidden-arrow');
-    }
-    if (screenShow > 2){
-        arrowRight.classList.add('hidden-arrow');
-    }
-})
+for (let box of checkboxes){
+    box.addEventListener('change', checkBoxing);
+}
 
-arrowLeft.addEventListener('click', ()=>{
-    document.querySelector(`#step${screenShow}`).classList.add('hidden-screen');
-    document.querySelector(`#step${screenShow-1}`).classList.remove('hidden-screen');
-    screenShow--;
-    if (screenShow < 2){
-        arrowLeft.classList.add('hidden-arrow');
+function checkBoxing(evt){
+    for (let elem of checkedElems){
+        elem.style.backgroundColor = "transparent";
+        if (elem.dataset.name == evt.target.value){
+            elem.style.backgroundColor = "#eafbc8";
+        }
+        console.log(elem.dataset.name == evt.target.value);
     }
-    if (screenShow < 3){
-        arrowRight.classList.remove('hidden-arrow');
-    }
-})
+}
