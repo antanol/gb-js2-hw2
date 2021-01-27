@@ -1,5 +1,6 @@
 // чтобы sass-loader корректно работал, указываем путь до файла scss
 import '../style/main.scss';
+import './hamburger';
 
 function putInBasket(){
     let alreadyExist = basket.content.find(item => {
