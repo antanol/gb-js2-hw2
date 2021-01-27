@@ -23,10 +23,13 @@ function putInBasket(){
     basket.checkAmount(this.num);
 }
 
-let basket = {
-    content: [],
-    amount: 0,
-    checkAmount: (num) =>{
+class Basket{
+    constructor(content=[], amount=0){
+        this.content = content;
+        this.amount = amount;
+    }
+    
+    checkAmount(num){
         let temp_count = 0;
         for (let i=0; i<this.content.length; i++){
             temp_count += num * this.content[i].price;
@@ -62,6 +65,8 @@ let Products = [
         price: 50,
         num: 0
 }];
+
+let basket = new Basket();
 
 // стартовое состояние 
 if (basket.amount == 0){
