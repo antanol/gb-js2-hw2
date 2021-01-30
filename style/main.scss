@@ -162,10 +162,6 @@ body{
     }
 }
 
-#task1-2{
-    display: none;
-}
-
 .hamburger-constructor {
     width: 600px;
     margin-top: 20px;
@@ -254,4 +250,7 @@ section{
             font-weight: bold;
         }
     }
+
+.task-hidden{
+    display: none;
 }
