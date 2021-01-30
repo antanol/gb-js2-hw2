@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ДЗ 1</title>
+    <title>ДЗ 2</title>
     
     <!-- Стили подключаем через лоадеры вебпака -->
     <!-- <link rel="stylesheet" href="style/main.css"> -->
@@ -62,8 +62,77 @@
                 </header>
                 <div id="catalog"></div>
             </div>
-            <div id="task3" class="task-hidden">
-                
+            <div id="task3">
+                <div class="hamburger-constructor">
+                    <i class="fa fa-angle-left hidden-arrow" aria-hidden="true"></i>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <section id="step1">
+                        <h2><b>Шаг 1:</b> Выберите бургер</h2>
+                        <hr>
+                        <label data-name="standart">
+                            <input type="radio" name="size-burger" value="standart">
+                            <img src="../img/standart.jpg" alt="Маленький бургер"> <br>
+                            Маленький бургер <br>
+                            <span class="params">20 ккал</span> <br>
+                            <span class="price">50 рублей</span>
+                        </label>
+                        <label data-name="big">
+                            <input type="radio" name="size-burger" value="big">
+                            <img src="../img/big.jpg" alt="Маленький бургер"> <br>
+                            Большой бургер <br>
+                            <span class="params">40 ккал</span> <br>
+                            <span class="price">100 рублей</span>
+                        </label>
+                    </section>
+                    <section id="step2" class="hidden-screen">
+                        <h2><b>Шаг 2:</b> Выберите начинку(-и)</h2>
+                        <hr>
+                        <label data-name="cheese">
+                            <input type="radio" name="topping" value="cheese">
+                            <img src="../img/cheese.jpg" alt="добавить сыр"> <br>
+                            Сыр <br>
+                            <span class="params">+20 ккал</span> <br>
+                            <span class="price">+10 рублей</span>
+                        </label>
+                        <label data-name="salad">
+                            <input type="radio" name="topping" value="salad">
+                            <img src="../img/salad.jpg" alt="добавить салат"> <br>
+                            Салат <br>
+                            <span class="params">+5 ккал</span> <br>
+                            <span class="price">+20 рублей</span>
+                        </label>
+                        <label data-name="fries">
+                            <input type="radio" name="topping" value="fries">
+                            <img src="../img/fries.jpg" alt="добавить картошку фри"> <br>
+                            Картошка <br>
+                            <span class="params">+10 ккал</span> <br>
+                            <span class="price">+15 рублей</span>
+                        </label>
+                    </section>
+                    <section id="step3" class="hidden-screen">
+                        <h2><b>Шаг 3:</b> При необходимости, выберите специи</h2>
+                        <hr>
+                        <label data-name="spice">
+                            <input type="radio" name="spices" value="spice">
+                            <img src="../img/spice.jpg" alt="Приправы"> <br>
+                            Посыпать острой приправой <br>
+                            <span class="params">+0 ккал</span> <br>
+                            <span class="price">+15 рублей</span>
+                        </label>
+                        <label data-name="mayo">
+                            <input type="radio" name="spices" value="mayo">
+                            <img src="../img/sauce.jpg" alt="Добавить майонез"> <br>
+                            Добавить майонез <br>
+                            <span class="params">+5 ккал</span> <br>
+                            <span class="price">+20 рублей</span>
+                        </label>
+                    </section>
+                    <hr>
+                    <h2>
+                        Итого с Вас: <span class="total-price">0</span> рублей <br>
+                        Количество килокалорий в бургере: <span class="total-ccal">0</span> ккал
+                    </h2>
+                </div>
             </div>
         </div>
     </div>
